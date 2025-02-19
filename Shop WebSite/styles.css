@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #EEEEEE;
+  background-color: #222831;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: #393E46;
+  color: #EEEEEE;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
+}
+nav{
+  border: 2px solid #D69ADE;
+  border-radius: 9px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+  
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  background-color: #222831;
+ 
+  
+}
+
+nav ul li a {
+  color: #EEEEEE;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  
+  
+}
+
+.section {
+  padding: 60px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#home {
+  background: #393E46;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+#home h2 {
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+#home p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #D69ADE; /* Updated color */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #AA60C8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-grid, .why-choose-us-grid, .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service, .reason {
+  text-align: center;
+  padding: 20px;
+  background: #3474a5; /* Updated color */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover, .reason:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service i, .reason i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #00ADB5;
+}
+
+.service h3, .reason h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #EEEEEE;
+}
+
+.service p, .reason p {
+  font-size: 1em;
+  color: #EEEEEE;
+}
+
+.review {
+  background: #393E46;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+  font-style: italic;
+  color: #EEEEEE;
+}
+
+.review span {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: #00ADB5;
+}
+
+.documents-list {
+  background: #393E46;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background: #00ADB5;
+  color: #EEEEEE;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-btn i {
+  transition: transform 0.3s;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #222831;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.accordion-content ul {
+  padding: 10px 0;
+  list-style: none;
+}
+
+.accordion.active .accordion-btn i {
+  transform: rotate(180deg);
+}
+
+.accordion.active .accordion-content {
+  max-height: 200px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #EEEEEE;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #00ADB5;
+  border-radius: 5px;
+  background: #393E46;
+  color: #EEEEEE;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #EEEEEE;
+  opacity: 0.7;
+}
+
+form button {
+  background: #00ADB5;
+  color: #EEEEEE;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #00777D;
+}
+
+footer {
+  background: #393E46;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
