@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Be+Vietnam+Pro:wght@100;400&family=Roboto:wght@100&display=swap');
 /* General Styles */
+
 *{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -27,6 +28,14 @@ header {
   color: #ffffff;
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header1 ul a {
+  /* margin-left: 10px ; */
+  border: 2px solid white;
+  padding: 9px;
+  border-radius: 11px;
+
 }
 
 header h1 {
