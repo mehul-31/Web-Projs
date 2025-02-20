@@ -392,3 +392,29 @@ footer {
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .reviews-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .why-choose-us-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  .box iframe {
+    border-radius: 12px;
+  }
+  
+  .map-text{
+    font-size: 2rem;
+  }
+  
+}
