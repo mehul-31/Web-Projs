@@ -30,13 +30,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header1 ul a {
-  /* margin-left: 10px ; */
-  border: 2px solid white;
-  padding: 9px;
-  border-radius: 11px;
 
-}
 
 header h1 {
   text-align: center;
